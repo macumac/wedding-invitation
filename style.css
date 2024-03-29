@@ -223,6 +223,7 @@ body {
     padding-bottom: 8rem;
     text-align: center;
     color: whitesmoke;
+    min-height: 100vh;
 }
 
 .surah h5 {
@@ -232,6 +233,7 @@ body {
 .countdownmen {
     background-image: url(bg/bg3.png);
     padding-top: 10rem;
+    min-height: 100vh;
 }
 
 .countdownmen h2 {
