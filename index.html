@@ -45,20 +45,20 @@
     </section>
 
 
-    <section>
-		<nav class="navbar bg-transparent fixed-bottom" style="display: none;">
-			<div class="navii">
-				<div class="navbar-nav">
-					<div class="nav-item">
-						<a href="#home" class="nav-link"><i class="bi bi-house-heart-fill"></i></a>
-						<a href="#info" class="nav-link"><i class="bi bi-calendar-heart-fill"></i></a>
-						<a href="#galeri" class="nav-link"><i class="bi bi-image"></i></a>
-						<a href="#rsvp" class="nav-link"><i class="bi bi-chat-heart"></i></a>
-						<a href="#gifts" class="nav-link"><i class="bi bi-bag-heart"></i></a>
-					</div>
+    <nav class="navbar bg-transparent fixed-bottom" style="display: none;">
+		<div class="navii">
+			<div class="navbar-nav">
+				<div class="nav-item">
+					<a href="#home" class="nav-link"><i class="bi bi-house-heart-fill"></i></a>
+					<a href="#info" class="nav-link"><i class="bi bi-calendar-heart-fill"></i></a>
+					<a href="#galeri" class="nav-link"><i class="bi bi-image"></i></a>
+					<a href="#rsvp" class="nav-link"><i class="bi bi-chat-heart"></i></a>
+					<a href="#gifts" class="nav-link"><i class="bi bi-bag-heart"></i></a>
 				</div>
 			</div>
-		</nav>
+		</div>
+	</nav>
+
 
       <section id="home" class="home">
         <div class="container">
@@ -76,7 +76,7 @@
                         <p class="font-weight-bold"><br>Putra Dari Bapak Paeran dan Ibu Partini</p>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="200" class="col-md-6 mb-5 ">
-                        <h3 class="caption display-4">Deva Dwi Cahya Gustina</h3>
+                        <h3 class="caption display-4">Deva Dwicahya Gustina</h3>
                         <p class="font-weight-bold"><br>Putri Dari Bapak Sumarna dan Ibu Yuyun Sulastri </p>
                     </div>
                 </div>
@@ -145,6 +145,44 @@
         </div>
 
 	  </section>
+
+	  <section id="informa" class="informa">
+		<div class="container">
+            <div class="row justify-content-center">
+				<div class="col-md-8 col-10 text-center">
+					<h2>Ngunduh Mantu</h2>
+				</div>
+            </div>
+			<div class="row justify-content-center mt-4" >
+				<div class="col-md-5 col-10" data-aos="fade-down" data-aos-duration="1000">
+					<div class="card text-center text-bg-light mb-5">
+						<div class="card-body">
+							<div class="row justify-content-center">
+								<div class="col-md-6">
+									<i class="bi bi-clock d-block"></i>
+									<span>08.00 - Selesai</span>
+								</div>
+								<div class="col-md-6">
+									<i class="bi bi-calendar3 d-block"></i>
+									<span>Kamis, 23 Mei 2024</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lokasi">
+					<div class="row justify-content-center">
+						<div class="col-md-8 col-10 text-center" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="mapouter">
+								<a href="https://maps.app.goo.gl/syVoyLreop9VNtFz7" target="_blank" class="btn btn-light btn-sm my-3"></i>Klik untuk membuka peta</a>
+							</div>	
+						</div>
+						<div class="col-md-8 col-10 text-center">
+							<p class="alamat">Alamat : Desa Pundong, RT 01,RW 00, kelurahan Srihardono, kecamatan Pundong, kabupaten Bantul, kota Yogyakarta.
+								Kode pos : 55771</p>
+						</div>
+					</div>
+				</div>	
 
 	  <section id="galeri" class="galeri">
 		<div class="container">
@@ -333,7 +371,7 @@
 
 	<div id="audio-container">
 		<audio id="song" autoplay loop>
-			<source src="musik/lagu.mp3" type="audio/mp3">
+			<source src="musik/y2mate.com - Endah N Rhesa Menua Bersama Official Lyric Video.mp3" type="audio/mp3">
 		</audio>
 
 		<div class="audio-icon-wrapper" style="display: none;">
@@ -362,8 +400,21 @@
 		})
 	</script>
 
+<script>
+    const stickyTop = document.querySelector('.sticky-top');
+    const offcanvas = document.querySelector('.offcanvas');
+
+    offcanvas.addEventListener('show.bs.offcanvas', function () {
+      stickyTop.style.overflow = 'visible';
+    });
+
+    offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+      stickyTop.style.overflow = 'hidden';
+    });
+
+  </script>
+
   <script>
-	const navbar = document.querySelector(".navii")
     const rootElement = document.querySelector(":root");
     const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
     const audioIcon = document.querySelector('.audio-icon-wrapper i');
@@ -386,7 +437,6 @@
       rootElement.style.scrollBehavior = 'smooth';
       // localStorage.setItem('opened', 'true');
       playAudio();
-	  playnavii();
     }
 
     function playAudio() {
