@@ -288,6 +288,7 @@ body {
 
 .gifts {
     background-image: url(bg/Desain\ tanpa\ judul\ \(4\).png);
+    min-height: 82vh;
     padding-top: 5rem;
     padding-bottom: 8rem;
 }
@@ -340,7 +341,7 @@ footer li {
     right: 2rem;
     cursor: pointer;
     color: wheat;
-    opacity: 50%;
+    opacity: 40%;
     mix-blend-mode: difference;
     animation: rotating 4s linear infinite;
     transform-origin: center;
