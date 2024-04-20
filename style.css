@@ -142,7 +142,8 @@ body {
 
 .home .couple img {
     width: 50%;
-    border: 5px solid wheat;
+    height: 90%;
+    border: 5px solid gray;
     border-radius: 40px;
 }
 
